@@ -1,6 +1,7 @@
 project "libxxhash"
     kind "StaticLib"
     language "C"
+    cdialect "C17"
     vectorextensions "AVX2"
     includedirs
     {

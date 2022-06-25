@@ -3,6 +3,7 @@ local XXHSUM_DIR = "../cli"
 project "xxhsum"
     kind "ConsoleApp"
     language "C"
+    cdialect "C17"
     vectorextensions "AVX2"
     includedirs
     {

@@ -1,3 +1,5 @@
+include "xxhash-common.lua"
+
 local XXHSUM_DIR = "../cli"
 
 project "xxhsum"
@@ -5,6 +7,9 @@ project "xxhsum"
     language "C"
     cdialect "C17"
     vectorextensions "AVX2"
+    exceptionhandling (EXCEPTIONS_ENABLED)
+    rtti "Off"
+    staticruntime (STATIC_RUNTIME)
     includedirs
     {
         "../",
